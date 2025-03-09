@@ -20,6 +20,8 @@
     --cor-terciaria-fonte:#A362FF;
     --cor-quartuaria-fonte:#9857D3;
     --cor-quintuaria-fonte:#CCD6F6;
+    --cor-sextuaria-fonte:#482675;
+
 
     --font-principal:'Plus Jakarta Sans';
     --font-secundaria:'Krona One';
@@ -28,7 +30,7 @@
 
 /* ------------------------------C A B E Ç A L H O----------------------------------- */
 header{
-    background: linear-gradient(var(--cor-quartuaria-fonte),var(--cor-header));
+    background: linear-gradient(var(--cor-sextuaria-fonte),var(--cor-header));
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -62,6 +64,16 @@ header{
 .logo {
     margin-right: auto;
 }
+/* ------------------------------C O R P O----------------------------------- */
+
+
+main{
+    padding-top: 113px ;
+    background: var(--cor-main);
+    min-height: 100vh;
+
+}
+
 
 /* ------------------------------R O D A P É----------------------------------- */
 footer{
@@ -78,11 +90,4 @@ footer{
     color: var(--cor-padrao-fonte);
 }
 
-/* ------------------------------C O R P O----------------------------------- */
-
-section{
-    background: var(--cor-main);
-    height: 2000px;
-    
-}
 
