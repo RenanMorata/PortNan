@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+/* ------------------------------V A R I Á V E I S----------------------------------- */
+:root{
+    --cor-header:#1A0B2E;
+    --cor-main:#11071F;
+    --cor-padrao-fonte:#ffffff;
+    --cor-secundaria-fonte:#7127BA;
+    --cor-terciaria-fonte:#A362FF;
+    --cor-quartuaria-fonte:#9857D3;
+    --cor-quintuaria-fonte:#CCD6F6;
+
+    --font-principal:'Plus Jakarta Sans';
+    --font-secundaria:'Krona One';
+
+}
+
+/* ------------------------------C A B E Ç A L H O----------------------------------- */
+header{
+    background: linear-gradient(var(--cor-quartuaria-fonte),var(--cor-header));
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 100;
+    opacity: 98%;
+    width: 100%;
+    height: 113px;
+    position: fixed;
+    top: 0;
+    left: 0; 
+}
+
+.navbar {
+    display: flex;
+    justify-content:space-between; 
+    align-items: center;
+    width: 90%; 
+    margin: 0 auto; 
+    gap: 70px;
+}
+
+.navbar a {
+    color: var(--cor-padrao-fonte);
+    margin: 0 15px; 
+    font-family: var(--font-principal);
+    font-weight: bold;
+    font-size: 1.25rem;
+
+}
+
+.logo {
+    margin-right: auto;
+}
+
+/* ------------------------------R O D A P É----------------------------------- */
+footer{
+    background: var(--cor-header);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-family: var(--font-secundaria);
+    color: var(--cor-padrao-fonte);
+}
+
+/* ------------------------------C O R P O----------------------------------- */
+
+section{
+    background: var(--cor-main);
+    height: 2000px;
+    
+}
+
