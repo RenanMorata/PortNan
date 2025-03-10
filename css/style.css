@@ -20,7 +20,7 @@
     --cor-terciaria-fonte:#A362FF;
     --cor-quartuaria-fonte:#9857D3;
     --cor-quintuaria-fonte:#CCD6F6;
-    --cor-sextuaria-fonte:#482675;
+    --cor-sextuaria-fonte:#341e4e;
 
 
     --font-principal:'Plus Jakarta Sans';
@@ -63,6 +63,7 @@ header{
 
 .logo {
     margin-right: auto;
+    height: 7rem;
 }
 /* ------------------------------C O R P O----------------------------------- */
 
