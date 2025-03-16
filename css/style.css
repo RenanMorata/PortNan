@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Preahvihear&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+/* ------------------------------V A R I Á V E I S----------------------------------- */
+:root{
+    --cor-header:#1A0B2E;
+    --cor-main:#11071F;
+    --cor-padrao-fonte:#ffffff;
+    --cor-secundaria-fonte:#7127BA;
+    --cor-terciaria-fonte:#A362FF;
+    --cor-quartuaria-fonte:#9857D3;
+    --cor-quintuaria-fonte:#CCD6F6;
+    --cor-sextuaria-fonte:#341e4e;
+
+    --font-principal:'Plus Jakarta Sans';
+    --font-secundaria:'Krona One';
+    --font-terciaria:'Prompt';
+    --font-quartuaria:'Preahvihear'
+
+}
+
+/* ------------------------------C A B E Ç A L H O----------------------------------- */
+header{
+    background: linear-gradient(var(--cor-sextuaria-fonte),var(--cor-header));
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 100;
+    opacity: 98%;
+    width: 100%;
+    height: 113px;
+    position: fixed;
+    top: 0;
+    left: 0; 
+}
+
+.navbar {
+    display: flex;
+    justify-content:space-between; 
+    align-items: center;
+    width: 90%; 
+    margin: 0 auto; 
+    gap: 70px;
+    transition: transform, text-shadow 0.3s ease-in-out;
+}
+
+.navbar a:hover{
+    transform: scale(1.1);
+    text-shadow: 1px 1px 15px var(--cor-terciaria-fonte) ;
+}
+
+.navbar a {
+    color: var(--cor-padrao-fonte);
+    margin: 0 15px; 
+    font-family: var(--font-principal);
+    font-weight: bold;
+    font-size: 1.25rem;
+
+}
+
+.logo {
+    margin-right: auto;
+    height: 7rem;
+}
+/* ------------------------------C O R P O----------------------------------- */
+
+
+main{
+    padding-top: 113px ;
+    background: var(--cor-main);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    flex-direction: column;
+
+}
+
+.itens{
+    position: relative;
+    margin-left:180px;  
+}
+
+.gradiente{
+    position: relative;
+    z-index: 2;
+    bottom: 0px;
+    top: 0px;
+    right: 30px;
+}
+.emoji{
+    position: relative;
+    z-index: 2;
+    bottom: 5000px;
+    top: -50px;
+    right: 370px;
+    height: 300px;
+}
+.arrow{
+    position: relative;
+    z-index: 2;
+    bottom: 0px;
+    top: -300px;
+    right: 470px;
+    height: 150px;
+}
+.apresentacao{
+    position: relative;
+    z-index: 2;
+    bottom: 0px;
+    top: -425px;
+    right: -60px;
+    color: var(--cor-padrao-fonte);
+    font-family: var(--font-terciaria);
+    font-size: larger;
+}
+.apresentacao2{
+    position: relative;
+    z-index: 2;
+    bottom: 0px;
+    top: -330px;
+    right: 5px;
+    color: var(--cor-padrao-fonte);
+    font-family: var(--font-quartuaria);
+    font-size: small;
+}
+.apresentacao3{
+    position: relative;
+    z-index: 2;
+    bottom: 0px;
+    top: -330px;
+    right: -380px;
+    color: var(--cor-padrao-fonte);
+    font-family: var(--font-terciaria);
+    font-size:x-large;
+    text-align: left;
+}
+.apresentacao4{
+    position: relative;
+    z-index: 2;
+    bottom: 0px;
+    top: -330px;
+    right: -380px;
+    color: var(--cor-padrao-fonte);
+    font-family: var(--font-terciaria);
+    text-align: left;
+    font-size: small;
+}
+span{
+    color: var(--cor-secundaria-fonte);
+}
+
+.titulo{
+    color: var(--cor-padrao-fonte);
+    font-family: var(--font-principal);
+    font-size: 50px;
+    
+}
+strong{
+    color: var(--cor-terciaria-fonte);
+    font-family: var(--font-quartuaria);
+
+}
+
+.conteudo{
+    color: var(--cor-padrao-fonte);
+    font-family: var(--font-terciaria);
+}
+
+.texto-apresentacao{
+    position: relative;
+    top: -120px;
+}
+
+.titulo-form{
+    color: var(--cor-padrao-fonte);
+    font-family: var(--font-principal);
+}
+form{
+    margin-bottom: 32px;
+    text-align: center;
+    margin: 0.6rem auto;
+    mask-size: 45rem;
+}
+form .input-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+form .input-box input,textarea{
+    width: 100%;
+    padding: 16px;
+    font-size: 16px;
+    border-radius: 8px;
+    margin: 0.4rem auto;
+    font-family: var(--font-principal);
+    background: var(--cor-secundaria-fonte);
+    color: var(--cor-padrao-fonte);
+}
+input:hover,textarea:hover{
+    box-shadow: 1px 1px 10px var(--cor-secundaria-fonte);
+}
+input::placeholder,textarea::placeholder{
+    color: var(--cor-padrao-fonte);
+}
+form textarea{
+    resize: none;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input [type="number"]{
+    -moz-appearance: textfield;
+}
+
+.botao{
+    font-family: var(--font-principal);
+    background: var(--cor-secundaria-fonte);
+    color: var(--cor-padrao-fonte);
+    padding: 16px;
+    font-size: 16px;
+    border: solid var(--cor-secundaria-fonte);
+    border-radius: 8px;
+    margin: 0.4rem auto;
+    width: 150px;
+}
+.botao:hover{
+    background-color: var(--cor-quartuaria-fonte);
+    border: solid var(--cor-sextuaria-fonte);
+    cursor: pointer;
+}
+h1{
+    color: var(--cor-padrao-fonte);
+    font-family: var(--font-principal);    
+}
+.redes-sociais{
+    margin: 20px 0 20px;
+}
+.icones{
+    display: flex;
+    justify-content: center;
+    gap: 1rem; /* Aumenta o espaçamento entre os ícones */
+    padding-top: 15px;
+}
+.icones a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 4.5rem; /* Define um tamanho fixo para os ícones */
+    height: 4.5rem;
+    border-radius: 50%; /* Garante um formato circular */
+    transition: all 0.3s ease-in-out;
+}
+.icon{
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+    height: 50px;
+}
+.icon:hover{
+    background: var(--cor-padrao-fonte);
+    box-shadow: 0 0 10px var(--cor-padrao-fonte);
+}
+
+/* ------------------------------R O D A P É----------------------------------- */
+footer{
+    background: var(--cor-header);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    width: 100%;
+    font-family: var(--font-secundaria);
+    color: var(--cor-padrao-fonte);
+}
+
+
+
