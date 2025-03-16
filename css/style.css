@@ -186,6 +186,11 @@ strong{
     top: -120px;
 }
 
+.formulario-contato{
+    width: 100%;
+    background:var(--cor-header);
+}
+
 .titulo-form{
     color: var(--cor-padrao-fonte);
     font-family: var(--font-principal);
@@ -195,6 +200,7 @@ form{
     text-align: center;
     margin: 0.6rem auto;
     mask-size: 45rem;
+    width: 50%;
 }
 form .input-box{
     display: flex;
@@ -214,6 +220,7 @@ form .input-box input,textarea{
 }
 input:hover,textarea:hover{
     box-shadow: 1px 1px 10px var(--cor-secundaria-fonte);
+    transform: scale(1.03);
 }
 input::placeholder,textarea::placeholder{
     color: var(--cor-padrao-fonte);
@@ -242,11 +249,14 @@ input [type="number"]{
     border-radius: 8px;
     margin: 0.4rem auto;
     width: 150px;
+    transition: all 0.15s ease-in-out;
 }
 .botao:hover{
-    background-color: var(--cor-quartuaria-fonte);
+    background-color: var(--cor-main);
     border: solid var(--cor-sextuaria-fonte);
     cursor: pointer;
+    box-shadow: 0 0 5px var(--cor-padrao-fonte);
+    color: var(--cor-quintuaria-fonte);
 }
 h1{
     color: var(--cor-padrao-fonte);
