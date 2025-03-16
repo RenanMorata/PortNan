@@ -36,23 +36,28 @@
              </div>             
         </section>
         <section class="formulario-contato">
-            <form>
+            <form id="contatoForm"> 
                 <h2 class="titulo-form">Entre em contato</h2>
+                
                 <div class="input-box">
-                    <input type="text" placeholder="Nome Completo" id="Nome">
-                    <input type="email" placeholder="Email" id="Email">
+                    <input type="text" placeholder="Nome Completo" id="Nome" required>
+                    <input type="email" placeholder="Email" id="Email" required>
                 </div>
+                
                 <div class="input-box">
-                    <input type="number" placeholder="Numero de Telefone" id="number">
-                    <input type="text" placeholder="Assunto" id="Assunto">
+                    <input type="tel" placeholder="Número de Telefone" id="Telefone" maxlength="11" required>
+                    <input type="text" placeholder="Assunto" id="Assunto" required>
                 </div>
+                
                 <textarea id="Mensagem" cols="30" rows="8" placeholder="Mensagem" required></textarea>
+                
+                <button type="submit" class="botao">Enviar</button>
             </form>
-                   
         </section>
     </main>
     <footer>
         Copyright &copy; 2025 by &lt;/Renan&gt;, ALL rights Reserved
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>

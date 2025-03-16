@@ -178,6 +178,7 @@ strong{
 
 .conteudo{
     color: var(--cor-padrao-fonte);
+    font-family: var(--font-terciaria);
 }
 
 .texto-apresentacao{
@@ -211,12 +212,41 @@ form .input-box input,textarea{
     background: var(--cor-secundaria-fonte);
     color: var(--cor-padrao-fonte);
 }
-input::placeholder,
-textarea::placeholder{
+input:hover,textarea:hover{
+    box-shadow: 1px 1px 10px var(--cor-secundaria-fonte);
+}
+input::placeholder,textarea::placeholder{
     color: var(--cor-padrao-fonte);
 }
 form textarea{
     resize: none;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input [type="number"]{
+    -moz-appearance: textfield;
+}
+
+.botao{
+    font-family: var(--font-principal);
+    background: var(--cor-secundaria-fonte);
+    color: var(--cor-padrao-fonte);
+    padding: 16px;
+    font-size: 16px;
+    border: solid var(--cor-secundaria-fonte);
+    border-radius: 8px;
+    margin: 0.4rem auto;
+    width: 150px;
+}
+.botao:hover{
+    background-color: var(--cor-quartuaria-fonte);
+    border: solid var(--cor-sextuaria-fonte);
+    cursor: pointer;
 }
 /* ------------------------------R O D A P É----------------------------------- */
 footer{
@@ -226,8 +256,6 @@ footer{
     justify-content: center;
     align-items: center;
     padding: 0.5rem;
-    position: fixed;
-    bottom: 0;
     width: 100%;
     font-family: var(--font-secundaria);
     color: var(--cor-padrao-fonte);
