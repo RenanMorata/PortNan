@@ -53,6 +53,12 @@ header{
     width: 90%; 
     margin: 0 auto; 
     gap: 70px;
+    transition: transform, text-shadow 0.3s ease-in-out;
+}
+
+.navbar a:hover{
+    transform: scale(1.1);
+    text-shadow: 1px 1px 15px var(--cor-terciaria-fonte) ;
 }
 
 .navbar a {
@@ -85,7 +91,7 @@ main{
 
 .itens{
     position: relative;
-    margin-left:180px;
+    margin-left:180px;  
 }
 
 .gradiente{
@@ -160,15 +166,22 @@ span{
 .titulo{
     color: var(--cor-padrao-fonte);
     font-family: var(--font-principal);
+    font-size: 50px;
     
 }
 strong{
     color: var(--cor-terciaria-fonte);
     font-family: var(--font-quartuaria);
+
 }
 
 .conteudo{
     color: var(--cor-padrao-fonte);
+}
+
+.texto-apresentacao{
+    position: relative;
+    top: -120px;
 }
 
 /* ------------------------------R O D A P É----------------------------------- */
