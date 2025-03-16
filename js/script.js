@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 // VALIDAÇÃO DO FORMULARIO
+=======
+>>>>>>> 16ae13dffa12c9b13ae7f090cb88b7fdd1fbf584
 document.getElementById("contatoForm").addEventListener("submit", function(event) {
     event.preventDefault(); // Impede o envio se houver erros
 
@@ -43,6 +46,7 @@ document.getElementById("contatoForm").addEventListener("submit", function(event
     // Se todas as validações passarem, o formulário pode ser enviado
     alert("Formulário enviado com sucesso!");
     this.submit(); // Envia o formulário
+<<<<<<< HEAD
 });
 
 // FUNÇÃO PRA ABIR LINK
@@ -62,3 +66,6 @@ abrirLink("github","https://github.com/RenanMorata")
 
 
 
+=======
+});
+>>>>>>> 16ae13dffa12c9b13ae7f090cb88b7fdd1fbf584
