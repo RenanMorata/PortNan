@@ -290,6 +290,19 @@ h1{
     box-shadow: 0 0 10px var(--cor-padrao-fonte);
 }
 
+.habilidades{
+    display: flex;
+    gap: 1.8rem;
+    color: var(--cor-padrao-fonte);
+    font-family: var(--font-principal);
+    margin-bottom: 1.25rem;
+}
+.card{
+    background:var(--cor-header);
+    height: 25rem;
+    width: 50rem;
+    border-radius: 30px;
+}
 /* ------------------------------R O D A P É----------------------------------- */
 footer{
     background: var(--cor-header);
