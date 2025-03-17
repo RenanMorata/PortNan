@@ -13,6 +13,10 @@
     scroll-behavior: smooth;
 }
 
+body{
+    width: 100%;
+    overflow-x: hidden;
+}
 /* ------------------------------V A R I Á V E I S----------------------------------- */
 :root{
     --cor-header:#1A0B2E;
@@ -299,8 +303,8 @@ h1{
 }
 .card{
     background:var(--cor-header);
-    height: 25rem;
-    width: 50rem;
+    height: 12rem;
+    width: 25rem;
     border-radius: 30px;
 }
 /* ------------------------------R O D A P É----------------------------------- */
