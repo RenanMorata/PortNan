@@ -272,21 +272,21 @@ h1{
 .icones{
     display: flex;
     justify-content: center;
-    gap: 1rem; /* Aumenta o espaçamento entre os ícones */
+    gap: 1rem; 
     padding-top: 15px;
 }
 .icones a {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 4.5rem; /* Define um tamanho fixo para os ícones */
+    width: 4.5rem;
     height: 4.5rem;
-    border-radius: 50%; /* Garante um formato circular */
+    border-radius: 50%; 
     transition: all 0.3s ease-in-out;
 }
 .icon{
     border-radius: 50%;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.15s ease-in-out;
     height: 50px;
 }
 .icon:hover{
@@ -303,8 +303,8 @@ h1{
 }
 .card{
     background:var(--cor-header);
-    height: 12rem;
-    width: 25rem;
+    height: 24rem;
+    width: 40rem;
     border-radius: 30px;
 }
 /* ------------------------------R O D A P É----------------------------------- */
