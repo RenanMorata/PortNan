@@ -178,7 +178,7 @@ strong{
 
 .conteudo{
     color: var(--cor-padrao-fonte);
-    font-family: var(--font-terciaria);
+    font-family: var(--font-secundaria);
 }
 
 .texto-apresentacao{
