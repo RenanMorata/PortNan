@@ -13,17 +13,12 @@
     scroll-behavior: smooth;
 }
 
-body{
-    width: 100%;
-    overflow-x: hidden;
-}
-
 /* ------------------------------V A R I Á V E I S----------------------------------- */
 :root{
     --cor-header:#1A0B2E;
     --cor-main:#11071F;
     --cor-padrao-fonte:#ffffff;
-    --cor-secundaria-fonte:#ba279a;
+    --cor-secundaria-fonte:#7127BA;
     --cor-terciaria-fonte:#A362FF;
     --cor-quartuaria-fonte:#9857D3;
     --cor-quintuaria-fonte:#CCD6F6;
