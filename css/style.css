@@ -307,6 +307,17 @@ h1{
     width: 40rem;
     border-radius: 30px;
 }
+
+.texto-front{
+    padding: 1.5rem 3rem;
+    font-size: 1.6rem;
+}
+
+.icones{
+    display: flex;
+    height: 4.5rem;
+}
+
 /* ------------------------------R O D A P É----------------------------------- */
 footer{
     background: var(--cor-header);
