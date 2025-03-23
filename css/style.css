@@ -34,6 +34,7 @@ body{
     --font-quartuaria:'Preahvihear'
 
 }
+/* ---------------------------------------------------------------------------------- */
 
 /* ------------------------------C A B E Ç A L H O----------------------------------- */
 header{
@@ -78,8 +79,9 @@ header{
     margin-right: auto;
     height: 7rem;
 }
-/* ------------------------------C O R P O----------------------------------- */
+/* ------------------------------------------------------------------------------- */
 
+/* ---------------------------------C O R P O-------------------------------------- */
 
 main{
     padding-top: 113px ;
@@ -91,9 +93,10 @@ main{
     text-align: center;
     position: relative;
     flex-direction: column;
-
 }
+/* ------------------------------------------------------------------------------ */
 
+/* ------------------------------INICIO DA PAGINA------------------------------- */
 .itens{
     position: relative;
     margin-left:180px;  
@@ -189,7 +192,46 @@ strong{
     position: relative;
     top: -120px;
 }
+/* ------------------------------------------------------------------------------------- */
 
+/* ----------------------------------SEÇÃO HABILIDADES---------------------------------- */
+.habilidades{
+    display: flex;
+    gap: 1.8rem;
+    color: var(--cor-padrao-fonte);
+    font-family: var(--font-principal);
+    margin-bottom: 1.25rem;
+}
+
+.habilidades h2{
+    margin-bottom: 1.2rem;
+    font-size: 2rem;
+}
+.card{
+    background:var(--cor-header);
+    height: 24rem;
+    width: 40rem;
+    border-radius: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px var(--cor-padrao-fonte) ;
+}
+
+.texto-front{
+    padding: 1.5rem 3rem;
+    font-size: 1.6rem;
+}
+
+.icones{
+    display: flex;
+    height: 4.5rem;
+}
+/* --------------------------------------------------------------------------------- */
+
+/* ------------------------------------SEÇÃO FORMULARIO------------------------------ */
 .formulario-contato{
     width: 100%;
     background:var(--cor-header);
@@ -262,6 +304,9 @@ input [type="number"]{
     box-shadow: 0 0 5px var(--cor-padrao-fonte);
     color: var(--cor-quintuaria-fonte);
 }
+/* ----------------------------------------------------------------------------------------------- */
+
+/* -----------------------------------------REDES SOCIAIS----------------------------------------- */
 h1{
     color: var(--cor-padrao-fonte);
     font-family: var(--font-principal);    
@@ -293,43 +338,9 @@ h1{
     background: var(--cor-padrao-fonte);
     box-shadow: 0 0 10px var(--cor-padrao-fonte);
 }
+/* ----------------------------------------------------------------------------------- */
 
-.habilidades{
-    display: flex;
-    gap: 1.8rem;
-    color: var(--cor-padrao-fonte);
-    font-family: var(--font-principal);
-    margin-bottom: 1.25rem;
-}
-
-.habilidades h2{
-    margin-bottom: 1.2rem;
-    font-size: 2rem;
-}
-.card{
-    background:var(--cor-header);
-    height: 24rem;
-    width: 40rem;
-    border-radius: 30px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover{
-    transform: translateY(-10px);
-    box-shadow: 0px 10px 20px var(--cor-padrao-fonte) ;
-}
-
-.texto-front{
-    padding: 1.5rem 3rem;
-    font-size: 1.6rem;
-}
-
-.icones{
-    display: flex;
-    height: 4.5rem;
-}
-
-/* ------------------------------R O D A P É----------------------------------- */
+/* ------------------------------R O D A P É------------------------------------------- */
 footer{
     background: var(--cor-header);
     display: flex;
