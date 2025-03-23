@@ -59,24 +59,33 @@ function abrirLink(id,url){
 abrirLink("instagram", "https://www.instagram.com/renan.morata?igsh=YW9qcG9kMTlrZ2Vz");
 abrirLink("linkedin","https://www.linkedin.com/in/renan-morata-025580333/");
 abrirLink("github","https://github.com/RenanMorata") 
-
+//  --------------------------------------------------------------------------------------
+// -------------------- FUNÇÃO PRA DEIXAR O TEXTO DIGITANDO ----------------------------
 function typeEffect(element, speed) {
     let text = element.innerHTML;
-    element.innerHTML = "";
-    let i = 0;
-    let interval = setInterval(() => {
-        if (i < text.length) {
-            element.innerHTML += text.charAt(i);
-            i++;
-        } else {
-            clearInterval(interval);
-        }
-    }, speed);
+    element.innerHTML = text.charAt(0); // Mantém a primeira letra sempre visível
+    let i = 1; // Começa a digitação a partir da segunda letra
+
+    function startTyping() {
+        element.innerHTML = text.charAt(0); // Garante que a primeira letra permaneça
+        i = 1;
+        let interval = setInterval(() => {
+            if (i < text.length) {
+                element.innerHTML += text.charAt(i);
+                i++;
+            } else {
+                clearInterval(interval);
+                setTimeout(startTyping, 2000); // Espera 2 segundos antes de reiniciar
+            }
+        }, speed);
+    }
+
+    startTyping(); // Inicia o efeito de digitação
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-    document.querySelectorAll(".texto-front").forEach((element) => {
-        typeEffect(element, 50);
+    document.querySelectorAll(".titulo-card").forEach((element) => {
+        typeEffect(element, 180);
     });
 });
 
