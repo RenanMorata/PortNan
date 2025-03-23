@@ -60,6 +60,25 @@ abrirLink("instagram", "https://www.instagram.com/renan.morata?igsh=YW9qcG9kMTlr
 abrirLink("linkedin","https://www.linkedin.com/in/renan-morata-025580333/");
 abrirLink("github","https://github.com/RenanMorata") 
 
+function typeEffect(element, speed) {
+    let text = element.innerHTML;
+    element.innerHTML = "";
+    let i = 0;
+    let interval = setInterval(() => {
+        if (i < text.length) {
+            element.innerHTML += text.charAt(i);
+            i++;
+        } else {
+            clearInterval(interval);
+        }
+    }, speed);
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".texto-front").forEach((element) => {
+        typeEffect(element, 50);
+    });
+});
 
 
 
