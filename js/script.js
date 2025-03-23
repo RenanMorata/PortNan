@@ -1,5 +1,5 @@
 
-// VALIDAÇÃO DO FORMULARIO
+// ----------------------------VALIDAÇÃO DO FORMULARIO---------------------------------------
 
 document.getElementById("contatoForm").addEventListener("submit", function(event) {
     event.preventDefault(); // Impede o envio se houver erros
@@ -46,8 +46,8 @@ document.getElementById("contatoForm").addEventListener("submit", function(event
     alert("Formulário enviado com sucesso!");
     this.submit(); // Envia o formulário
 });
-
-// FUNÇÃO PRA ABIR LINK
+// ------------------------------------------------------------------------------------------
+// ---------------------------------FUNÇÃO PRA ABIR LINK-------------------------------------
 
 function abrirLink(id,url){
     const elemento = document.getElementById(id);
@@ -60,6 +60,7 @@ abrirLink("instagram", "https://www.instagram.com/renan.morata?igsh=YW9qcG9kMTlr
 abrirLink("linkedin","https://www.linkedin.com/in/renan-morata-025580333/");
 abrirLink("github","https://github.com/RenanMorata") 
 //  --------------------------------------------------------------------------------------
+
 // -------------------- FUNÇÃO PRA DEIXAR O TEXTO DIGITANDO ----------------------------
 function typeEffect(element, speed) {
     let text = element.innerHTML;
@@ -88,6 +89,7 @@ document.addEventListener("DOMContentLoaded", function () {
         typeEffect(element, 180);
     });
 });
+// --------------------------------------------------------------------------------------------------
 
 
 
