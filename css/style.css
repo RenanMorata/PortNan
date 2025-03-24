@@ -234,14 +234,15 @@ strong{
 /* ---------------------------DIPLOMAS E CERTIFICAÇÕES-------------------------------- */
 .certificacoes p {
     font-family: var(--font-secundaria);
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    margin: 3rem 0rem 2rem;
 }
 
 .bloco1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: auto;
+    margin-bottom: 2.5rem;
 }
 
 /* Container para o certificado */
